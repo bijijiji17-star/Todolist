@@ -1,5 +1,6 @@
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
+const addBtn = document.getElementById("addBtn");
 
 function addTask() {
   const taskText = taskInput.value.trim();
@@ -28,5 +29,7 @@ function deleteTask(btn) {
   li.style.transform = "translateX(100px)";
   li.style.opacity = "0";
   setTimeout(() => li.remove(), 400);
-  document.getElementById("addBtn").addEventListener("click", addTask);
 }
+
+// Event Listener
+addBtn.addEventListener("click", addTask);
