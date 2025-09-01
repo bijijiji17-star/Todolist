@@ -28,4 +28,5 @@ function deleteTask(btn) {
   li.style.transform = "translateX(100px)";
   li.style.opacity = "0";
   setTimeout(() => li.remove(), 400);
+  document.getElementById("addBtn").addEventListener("click", addTask);
 }
